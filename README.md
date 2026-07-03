@@ -18,20 +18,6 @@
 
 ## 📖 About
 
-...
-
----
-
-## 📸 Portfolio Preview
-
-> Add a screenshot of your portfolio here.
-
-![Portfolio Preview](./images/preview.png)
-
----
-
-## 📖 About
-
 This portfolio represents my journey as a **Full Stack Developer** passionate about building scalable, responsive, and user-friendly web applications using modern web technologies.
 
 The website showcases my technical skills, featured projects, professional experience, education, and resume in a clean and interactive interface with smooth animations and a fully responsive design.
