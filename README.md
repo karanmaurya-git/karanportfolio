@@ -6,7 +6,22 @@
 
 ## 🌐 Live Demo
 
-🔗 https://karanmaurya-portfolio.vercel.app
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit-success?style=for-the-badge)](https://karan-portfolio-mu-murex.vercel.app)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/karanmaurya-git/karanportfolio)
+
+> A modern, responsive, and production-ready portfolio website built with **React** and **Vite** to showcase my skills, projects, education, experience, and achievements as a Full Stack Developer.
+
+---
+
+## 📸 Portfolio Preview
+
+![Portfolio Preview](./images/preview.png)
+
+---
+
+## 📖 About
+
+...
 
 ---
 
@@ -186,7 +201,7 @@ Deploy the generated `dist/` folder to:
 - 📧 Email: karanmaurya8998@gmail.com
 - 💼 LinkedIn: https://linkedin.com/in/karan-maurya-4260b6293/
 - 💻 GitHub: https://github.com/karanmaurya-git
-- 🌐 Portfolio: https://your-portfolio-link.vercel.app
+- 🌐 Portfolio: https://karan-portfolio-mu-murex.vercel.app
 
 ---
 
