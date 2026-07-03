@@ -1,0 +1,15 @@
+.footer {
+  background: var(--bg-raised);
+  border-top: 1px solid var(--border-soft);
+  padding: 28px 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__copy {
+  max-width: var(--container);
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13.5px;
+}

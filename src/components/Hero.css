@@ -1,0 +1,153 @@
+.hero {
+  position: relative;
+  min-height: calc(100vh - 69px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 32px 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--border) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(ellipse 65% 60% at 50% 35%,
+      #000 0%,
+      transparent 75%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.hero__photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--cyan);
+  box-shadow:
+    0 0 0 6px var(--cyan-soft),
+    0 25px 60px -20px var(--cyan-glow);
+  margin-bottom: 34px;
+  flex-shrink: 0;
+}
+
+.hero__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+
+.hero__name {
+  font-size: clamp(34px, 5.2vw, 54px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+
+.hero__role {
+  font-family: var(--font-body);
+  font-size: clamp(17px, 2vw, 22px);
+  font-weight: 600;
+  color: var(--cyan);
+  margin-bottom: 22px;
+  min-height: 34px;
+  letter-spacing: 0.4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__role span {
+  display: inline-block;
+}
+
+
+.hero__lead {
+  max-width: 560px;
+  color: var(--text-dim);
+  font-size: 15.5px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero__pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #04222b;
+  background: var(--cyan);
+  padding: 12px 22px;
+  border-radius: 30px;
+  box-shadow: 0 10px 24px -10px var(--cyan-glow);
+  transition: all 0.25s ease;
+}
+
+.hero__pill:hover {
+  transform: translateY(-4px);
+  background: #57e2fb;
+  box-shadow: 0 16px 32px -12px var(--cyan-glow);
+}
+
+.hero__pill svg {
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 20px 80px;
+  }
+
+  .hero__photo {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero__name {
+    font-size: 2rem;
+  }
+
+  .hero__role {
+    font-size: 1rem;
+    min-height: 32px;
+  }
+
+  .hero__lead {
+    font-size: 14px;
+  }
+
+  .hero__pill {
+    padding: 11px 18px;
+    font-size: 13.5px;
+  }
+}

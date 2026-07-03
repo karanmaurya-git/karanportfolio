@@ -1,0 +1,82 @@
+.experience__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience__row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.experience__row:first-child {
+  padding-top: 0;
+}
+
+.experience__row:last-child {
+  border-bottom: none;
+}
+
+.experience__date {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--cyan);
+  padding-top: 3px;
+}
+
+.experience__content h3 {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.experience__company {
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.experience__desc {
+  color: var(--text-dim);
+  font-size: 14.5px;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.experience__points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.experience__points li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-dim);
+  font-size: 13.75px;
+  line-height: 1.6;
+}
+
+.experience__points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cyan);
+}
+
+@media (max-width: 700px) {
+  .experience__row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

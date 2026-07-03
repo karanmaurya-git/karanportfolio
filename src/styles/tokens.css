@@ -1,0 +1,122 @@
+/* ============================================================
+   DESIGN TOKENS — "Console" theme
+   A developer-portfolio identity built around a terminal/IDE
+   metaphor: near-black backgrounds, a single cyan signal color,
+   monospace used for labels & meta the way a status bar would,
+   and a display face with a technical, geometric edge.
+   ============================================================ */
+:root {
+  /* Color */
+  --bg: #060a12;
+  --bg-raised: #0a101c;
+  --panel: #0c1420;
+  --card: #0e1826;
+  --border: #1c2839;
+  --border-soft: #141d2c;
+
+  --text: #eaf1fb;
+  --text-dim: #93a3ba;
+  --text-faint: #55637a;
+
+  --cyan: #2dd4f4;
+  --cyan-soft: rgba(45, 212, 244, 0.1);
+  --cyan-glow: rgba(45, 212, 244, 0.35);
+  --amber: #f5b942;
+  --amber-soft: rgba(245, 185, 66, 0.12);
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Layout */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --container: 1140px;
+
+  --shadow-glow: 0 0 0 1px var(--border), 0 20px 60px -20px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--cyan-glow);
+  color: #fff;
+}
+
+/* focus visibility for keyboard nav */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

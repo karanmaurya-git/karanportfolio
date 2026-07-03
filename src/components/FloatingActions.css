@@ -1,0 +1,70 @@
+.floating-actions {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.floating-actions__top {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cyan);
+  color: #04222b;
+  box-shadow: 0 10px 26px -10px var(--cyan-glow);
+  transition: transform 0.15s ease;
+  animation: floatIn 0.25s ease;
+}
+.floating-actions__top:hover {
+  transform: translateY(-3px);
+}
+
+.floating-actions__resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13.5px;
+  color: #04222b;
+  background: var(--cyan);
+  padding: 13px 20px;
+  border-radius: 30px;
+  box-shadow: 0 10px 26px -10px var(--cyan-glow);
+  white-space: nowrap;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.floating-actions__resume:hover {
+  transform: translateY(-3px);
+  background: #57e2fb;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .floating-actions {
+    right: 14px;
+    bottom: 14px;
+  }
+  .floating-actions__resume span {
+    display: none;
+  }
+}

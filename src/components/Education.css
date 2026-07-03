@@ -1,0 +1,72 @@
+.education__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.edu-card {
+  display: flex;
+  gap: 18px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 26px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.edu-card:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.edu-card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cyan);
+  color: #04222b;
+}
+
+.edu-card__degree {
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.edu-card__school {
+  color: var(--cyan);
+  font-size: 13.5px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.edu-card__date {
+  color: var(--text-faint);
+  font-size: 12.5px;
+  margin-bottom: 12px;
+}
+
+.edu-card__desc {
+  color: var(--text-dim);
+  font-size: 13.75px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.edu-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 560px) {
+  .edu-card {
+    flex-direction: column;
+  }
+}

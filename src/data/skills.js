@@ -1,0 +1,27 @@
+// type "img"  -> logo image (devicon or simpleicons CDN)
+// type "lucide" -> lucide-react icon component name (rendered by About.jsx)
+export const skills = [
+  { name: 'C++', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+  { name: 'Java', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+  { name: 'Python', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+  { name: 'JavaScript', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'React.js', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'HTML5', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+  { name: 'CSS3', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+  { name: 'Tailwind CSS', type: 'img', src: 'https://cdn.simpleicons.org/tailwindcss/38BDF8' },
+  { name: 'Node.js', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Express.js', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', invert: true },
+  { name: 'REST APIs', type: 'lucide', icon: 'Link2' },
+  { name: 'MongoDB', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+  { name: 'MySQL', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+  { name: 'Git', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+  { name: 'GitHub', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', invert: true },
+  { name: 'VS Code', type: 'img', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
+  { name: 'Vercel', type: 'img', src: 'https://cdn.simpleicons.org/vercel/FFFFFF' },
+  { name: 'Netlify', type: 'img', src: 'https://cdn.simpleicons.org/netlify/00C7B7' },
+  { name: 'Render', type: 'img', src: 'https://cdn.simpleicons.org/render/46E3B7' },
+  { name: 'DSA', type: 'lucide', icon: 'BrainCircuit' },
+  { name: 'OOP', type: 'lucide', icon: 'Boxes' },
+  { name: 'DBMS', type: 'lucide', icon: 'Database' },
+  { name: 'System Design', type: 'lucide', icon: 'Network' },
+];
