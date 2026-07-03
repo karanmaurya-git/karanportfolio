@@ -20,7 +20,7 @@ export default function Hero() {
           <img src={karanPhoto} alt="Karan Maurya" />
         </div>
 
-        <h1 className="hero__name">{profile.name}</h1>
+      <h1 className="hero__name">Hi, I'm {profile.name}</h1>
 
         <p className="hero__role">
           <TypeAnimation
