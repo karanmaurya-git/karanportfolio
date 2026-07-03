@@ -7,9 +7,6 @@
 ## 🌐 Live Demo
 
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit-success?style=for-the-badge)](https://karan-portfolio-mu-murex.vercel.app)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/karanmaurya-git/karanportfolio)
-
-> A modern, responsive, and production-ready portfolio website built with **React** and **Vite** to showcase my skills, projects, education, experience, and achievements as a Full Stack Developer.
 
 ---
 
