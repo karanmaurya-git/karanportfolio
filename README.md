@@ -69,36 +69,39 @@ The website showcases my technical skills, featured projects, professional exper
 ## 📂 Folder Structure
 
 ```text
-karan-portfolio/
-│
+karanportfolio/
 ├── images/
 │   └── preview.png
-│
 ├── public/
 │   └── Karan_Maurya_Resume.pdf
-│
 ├── src/
-│   │
 │   ├── assets/
-│   │   ├── karan.jpg
-│   │   └── projects/
-│   │       ├── studyflow.png
-│   │       ├── fintrack.png
-│   │       └── stacks.png
-│   │
+│   │   ├── projects/
+│   │   │   ├── fintrack.png
+│   │   │   ├── stacks.png
+│   │   │   └── studyflow.png
+│   │   └── karan.jpg
 │   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
+│   │   ├── About.css
 │   │   ├── About.jsx
-│   │   ├── Projects.jsx
-│   │   ├── ProjectCard.jsx
-│   │   ├── Experience.jsx
-│   │   ├── Education.jsx
+│   │   ├── Contact.css
 │   │   ├── Contact.jsx
-│   │   ├── Footer.jsx
+│   │   ├── Education.css
+│   │   ├── Education.jsx
+│   │   ├── Experience.css
+│   │   ├── Experience.jsx
+│   │   ├── FloatingActions.css
 │   │   ├── FloatingActions.jsx
-│   │   └── *.css
-│   │
+│   │   ├── Footer.css
+│   │   ├── Footer.jsx
+│   │   ├── Hero.css
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.css
+│   │   ├── Navbar.jsx
+│   │   ├── ProjectCard.css
+│   │   ├── ProjectCard.jsx
+│   │   ├── Projects.css
+│   │   └── Projects.jsx
 │   ├── data/
 │   │   ├── education.js
 │   │   ├── experience.js
@@ -106,23 +109,20 @@ karan-portfolio/
 │   │   ├── profile.js
 │   │   ├── projects.js
 │   │   └── skills.js
-│   │
 │   ├── hooks/
 │   │   ├── useActiveSection.js
 │   │   └── useReveal.js
-│   │
 │   ├── styles/
 │   │   ├── layout.css
 │   │   └── tokens.css
-│   │
 │   ├── App.jsx
 │   └── main.jsx
-│
-├── package.json
-├── vite.config.js
-├── README.md
 ├── .gitignore
-└── LICENSE
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
 ```
 
 ---
